@@ -11,6 +11,30 @@
              * muy sencilla las diferentes formas de de 
              * declarar variables y veas sus diferencias
              */
+           
+           console.log("ANTES DE DEFINIR VARIABLES")
+           //console.log(NAME)    //VARIABLE DE TIPO CONST, DEVOLVERÁ ERROR XQ AUN NO SE HA DEFINIDO
+           //console.log(text)    //VARIABLE DE TIPO LET, DEVOLVERÁ ERROR XQ AUN NO SE HA DEFINIDO
+           console.log(whatever)    //TIPO VAR, DEVOLVERÁ Undefined YA QUE SÍ SE DEFINE MÁS ADELANTE
+           
+           const NAME = 'Cristina!';
+           let text = "Hello World!";
+           var whatever = "LoQueSea";
+
+           console.log("UNA VEZ DEFINIDAS LAS VARIABLES")
+           console.log(NAME)
+           console.log(text)
+           console.log(whatever)
+
+           //NAME = "Jose";       //ES UNA CONSTANTE, NO DEJARÁ CAMBIAR SU VALOR
+           text = "Hola Jose";  
+           whatever = "Me importa un carallo";
+
+           console.log("UNA VEZ SE HAN CAMBIADO SUS VALORES")
+           console.log(NAME)
+           console.log(text)
+           console.log(whatever)
+                       
         </script>
     </body>
 </html>
