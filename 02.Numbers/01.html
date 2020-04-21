@@ -7,10 +7,36 @@
     <body>
         <script type="text/javascript">
             // typeof
+            let num = 20
+            console.log(typeof num) //Devuelve NUMBER
+            num = '20'
+            console.log(typeof num) //Devuelve STRING
+
             // NaN
-            // isNaN()
-            // toString()
-            // .toFixed()
+            console.log(2 + '2')    //Devuelve 4
+            console.log(2 + '_text')    //Concatena número con texto y resulta en un texto
+            const NOT_NUMBER = 2 + '_text';
+            console.log(typeof NOT_NUMBER)  //Devuelve STRING
+            
+            console.log(isNaN(NaN))                 //TRUE
+            console.log(isNaN('TextoCualquiera'))   //TRUE
+            console.log(isNaN('12'))                //FALSE: sí lo toma como número
+            console.log(isNaN(12))                  //FALSE
+            console.log(isNaN(NOT_NUMBER))          //TRUE
+
+            // toString()   CONVIERTE A CADENA
+            let numero = 100
+            console.log(numero)             //De tipo NUMBER
+            console.log(numero.toString())  //De tipo STRING
+            console.log(typeof numero)     //Devuelve NUMBER
+            console.log(typeof numero.toString())  //Devuelve STRING
+
+            // .toFixed()   REDONDEO
+            console.log(numero.toFixed())   //Devuelve 100
+            console.log(numero.toFixed(2))   //Devuelve 100.00
+            numero = 100.90753297053
+            console.log(numero.toFixed(3))   //Devuelve 100.908
+
         </script>
     </body>
 </html>
