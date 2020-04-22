@@ -11,6 +11,23 @@
              * las diferentes formas de definir funciones
              * y ejecutarlas
              */
+
+             const MENSAJE = 'Hola Mundo!'  //Variable global, accesible en todas partes
+             function decirHola () {
+                 console.log(MENSAJE)       //Se va a poder usar la variable global dentro de la función
+             }
+
+             decirHola()
+             
+             
+             function decirHola2 () {
+                 const MENSAJE2 = 'Hola Mundo2!'  //Variable local, solo accesible en el scope de la función
+                 console.log(MENSAJE2)       //Solo se va a poder usar la variable local dentro de la función
+             }
+             
+             //console.log(MENSAJE2)  //Retornará ERROR pues la vable no está definida fuera de la función
+             decirHola2()
+
         </script>
     </body>
 </html>

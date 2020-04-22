@@ -11,6 +11,19 @@
              * las diferentes formas de definir funciones
              * y ejecutarlas
              */
+            
+            const MENSAJE = 'Texto de ejemplo'
+            var decirHola = (nombre) => `Hola ${nombre}`  //Definición de la función SIN BODY  
+            //Se le pueden pasar parámetros o no. Con el ARROW se indican las acciones con RETURN implícito.
+            
+            var decirAdios = (nombre) => { return `Adiós ${nombre}` }   //Otra forma: con BODY
+
+
+            //Si usamos la vable decirHola que incluye una función anónima flecha
+            console.log(decirHola())        //En este caso devolverá: HOLA UNDEFINED
+            console.log(decirHola('Jose'))  //En este caso devolverá: HOLA JOSE
+            
+            console.log(decirAdios('Pascual'))
         </script>
     </body>
 </html>

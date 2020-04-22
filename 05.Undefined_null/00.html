@@ -12,7 +12,26 @@
              * y analices los casos en los que da undefined o null y entender por qué
              */
             // UNDEFINED
+            console.log(a)  //Vable definida después usando VAR
+            var a = 'var de prueba' //DEVUELVE Undefined
+            console.log(a)  //Vable ya definida a la que queremos acceder
+
+            let b = 'let de prueba'
+            console.log(b)  //Vable referenciada NECESARIAMENTE DESPUÉS de definirla con LET para que no devuelva error
+            
+
             // NULL
+            console.log(c)  //Undefined
+            console.log(typeof c)   //Tipo UNDEFINED
+            var c = null
+            console.log(c)  //Null
+            
+
+            //console.log(d)  //ERROR: d aún no se ha inicializado 
+            let d = null
+            console.log(d)  //Null
+            console.log(typeof d)   //Tipo OBJECT
+
         </script>
     </body>
 </html>

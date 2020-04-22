@@ -11,6 +11,14 @@
              * las diferentes formas de definir funciones
              * y ejecutarlas
              */
+            
+            //FUNCIÓN ANÓNIMA (sin nombre) CON UN VALOR POR DEFECTO Y ASOCIADA A UNA VARIABLE
+            var decirHola = function (nombre = 'Segismundo') {
+                return `Hello ${nombre}`
+            }
+
+            console.log(decirHola())    //Devuelve por consola el valor de la variable 
+            console.log(decirHola('Jose'))    //Devuelve por consola el valor de la variable 
         </script>
     </body>
 </html>

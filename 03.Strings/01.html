@@ -5,6 +5,7 @@
         <title>Javascript: Strings</title>
     </head>
     <body>
+        <p class="newsletter-text"></p>
         <script type="text/javascript">
             /*
              * Es el momento de gestionar cadenas de texto
@@ -20,6 +21,17 @@
                 Esperamos lo disfrutes,
                 Un saludo,
              */
+
+             const NOMBRE = 'Jose Miguel';
+             const JUEGO = 'Link awakening';
+             const DESCUENTO = 20;  //%
+             const NEWSLETTER = `Hola ${NOMBRE},
+                Como regalo de bienvenida al Club de gamers,
+                queremos ofrecer un descuento del ${DESCUENTO}%
+                en el próximo lanzamiento de tu interés ${JUEGO}.
+                Esperamos lo disfrutes,
+                Un saludo,`;
+            document.querySelector('.newsletter-text').innerHTML = NEWSLETTER;
         </script>
     </body>
 </html>

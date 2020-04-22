@@ -5,6 +5,7 @@
         <title>Javascript: Booleans</title>
     </head>
     <body>
+        <p class="bloque-texto"></p>
         <script type="text/javascript">
             /*
              * 
@@ -13,6 +14,14 @@
              * Mensaje si no está conectado: Debes registrate para leer este artículo.
              * Mensaje si está conectado: Haz click aquí para ver el contenido.
              */
+             const USUARIO_LOGADO = true;
+             const BLOQUE_TEXTO = document.querySelector('.bloque-texto')
+             if (USUARIO_LOGADO) {
+                BLOQUE_TEXTO.innerHTML = 'Haz click aquí para ver el contenido.'
+             } else {
+                BLOQUE_TEXTO.innerHTML = 'Debes registrate para leer este artículo.'
+             }
+
         </script>
     </body>
 </html>

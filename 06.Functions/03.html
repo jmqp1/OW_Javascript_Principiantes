@@ -11,6 +11,21 @@
              * las diferentes formas de definir funciones
              * y ejecutarlas
              */
+
+            function decirHola(nombre = 'Manola') {
+                return `Hola ${nombre}!`;       //Estilo TEMPLATE LITERAL
+            }
+            
+            console.log(decirHola())    //Muestra en consola el valor retornado por la función POR DEFECTO
+            console.log(decirHola('Anibal'))    //Muestra en consola el valor retornado por la función con el parámetro introducido
+
+            
+            let saludoPorDefecto=decirHola()
+            console.log(saludoPorDefecto)
+            let saludoParametrizado=decirHola('Samuel')
+            console.log(saludoParametrizado)
+
+            
         </script>
     </body>
 </html>
